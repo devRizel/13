@@ -140,16 +140,18 @@ body.dark-mode a.icon {
         <div data-role="content" class="animated-heading">
             <input id="searchInput" list="searchOptions" placeholder="Search..." />
             <datalist id="searchOptions">
-              <option value="Main Dish">
-              <option value="Party Platters">
+                <option value="Burger">
+              <option value="Drinks">
+              <option value="Others">
             </datalist>
             <script>
               const input = document.getElementById('searchInput');
               input.addEventListener('change', () => {
                 const value = input.value;
                 const links = {
-                    "Main Dish": "maindish.html",
-                  "Party Platters": "food.html",
+                    "Burger": "regular.html",
+                    "Drinks": "drinks.html",
+                  "Others": "others.html",
                 };
                 if (links[value]) {
                   window.location.href = links[value];
@@ -158,7 +160,7 @@ body.dark-mode a.icon {
             </script>
         <br>
             <div id="extraContent">
-                <p style="font-size: 30px; text-align: center;">   Kuya Art’s Batchoyan
+                <p style="font-size: 30px; text-align: center;">  Burger Junction
 
                 </p>
             </div>

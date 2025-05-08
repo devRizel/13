@@ -127,25 +127,27 @@
         <div data-role="content" class="animated-heading">
             <input id="searchInput" list="searchOptions" placeholder="Search..." />
             <datalist id="searchOptions">
-                <option value="Main Dish">
-                <option value="Party Platters">
-              </datalist>
-              <script>
-                const input = document.getElementById('searchInput');
-                input.addEventListener('change', () => {
-                  const value = input.value;
-                  const links = {
-                      "Main Dish": "maindish.html",
-                    "Party Platters": "food.html",
-                  };
-                  if (links[value]) {
-                    window.location.href = links[value];
-                  }
-                });
-              </script>
+                <option value="Burger">
+              <option value="Drinks">
+              <option value="Others">
+            </datalist>
+            <script>
+              const input = document.getElementById('searchInput');
+              input.addEventListener('change', () => {
+                const value = input.value;
+                const links = {
+                    "Burger": "regular2.html",
+                    "Drinks": "drinks2.html",
+                  "Others": "others2.html",
+                };
+                if (links[value]) {
+                  window.location.href = links[value];
+                }
+              });
+            </script>
         <br>
             <div id="extraContent">
-                <p style="font-size: 30px; text-align: center;">   Kuya Art’s Batchoyan
+                <p style="font-size: 30px; text-align: center;">  Burger Junction
 
                 </p>
             </div>
